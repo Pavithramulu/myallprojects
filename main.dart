@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'exam.dart';
+import 'example1.dart';
+import 'list.dart';
+import 'num1.dart';
+import 'nums.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,22 +17,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      builder: (context, child) => ResponsiveWrapper.builder(child,
-          maxWidth: 1200,
-          minWidth: 480,
-          defaultScale: true,
-          breakpoints: [
-            const ResponsiveBreakpoint.resize(500, name: MOBILE),
-            const ResponsiveBreakpoint.autoScale(500, name: TABLET),
-            const ResponsiveBreakpoint.resize(500, name: DESKTOP),
-          ],
-          background: Container(color: const Color(0xFFF5F5F5))),
+      debugShowCheckedModeBanner: false,
+
       title: 'Flutter Demo',
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
+
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Exam11(),
+      //Sejfdh(),
+     // Numbers1(),
+       //CalculateAge(),
     );
   }
 }
