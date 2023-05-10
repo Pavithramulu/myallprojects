@@ -63,7 +63,7 @@ class Calculator extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 320,
+            height: 270,
             color: Colors.white70,
             child: Padding(
               padding:  const EdgeInsets.only(bottom: 10),
@@ -76,7 +76,7 @@ class Calculator extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 531,
+            height: 631,
             color: Colors.white70,
 
             child: Column(
@@ -87,7 +87,7 @@ class Calculator extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(right: 5,left: 20),
+                        padding: const EdgeInsets.only(left: 20),
                         child: SizedBox(
                           width: 90,
                           height: 90,
@@ -477,7 +477,7 @@ class Calculator extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(45),
                               ),
                             ),
-                            child: const Text( '+/−',style: TextStyle(fontSize: 30, color: Colors.white),
+                            child: const Text( '+/−',style: TextStyle(fontSize: 25, color: Colors.white),
                             ),
                           ),
                         ),
