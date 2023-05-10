@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
 
 
 class Agecalc extends StatefulWidget {
@@ -30,7 +29,6 @@ class _AgecalcState extends State<Agecalc> {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     DateTime currentDate = DateTime.now();
-    String formattedDate = DateFormat('d MMM, y').format(currentDate);
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -57,7 +55,6 @@ class _AgecalcState extends State<Agecalc> {
                     alignment: Alignment.topLeft,
                     child: Text("Enter Your Name",
                         style: TextStyle(
-
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
                           letterSpacing: 1,
@@ -74,12 +71,7 @@ class _AgecalcState extends State<Agecalc> {
                         borderRadius: BorderRadius.circular(8)),
                     padding: const EdgeInsets.only(left: 20),
                     child: TextFormField(
-                      keyboardType: TextInputType.number,
-                      inputFormatters: <TextInputFormatter>[
-                        FilteringTextInputFormatter.digitsOnly,
-                        LengthLimitingTextInputFormatter(02)
-                      ],
-                      style: const TextStyle(
+                        style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Color(0xff1C003E),
