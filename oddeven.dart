@@ -66,7 +66,7 @@ class _NumbersState extends State<Numbers> {
                       Container(
                         alignment: Alignment.center,
                         height: 50,
-                        width: 430,
+                        width: 300,
                         child: Align(
                           child: TextField(
                             inputFormatters: <TextInputFormatter>[
